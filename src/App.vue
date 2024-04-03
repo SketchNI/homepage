@@ -1,5 +1,4 @@
 <script setup>
-import { ref } from "vue";
 import { links } from "./DefaultLinks.ts";
 import { Storage } from "./utilities/storage.ts";
 
@@ -11,6 +10,7 @@ if (Storage.has("favourites")) {
 let dev_links = [
   { label: "Meilisearch", href: "http://localhost:7700" },
   { label: "Mailpit", href: "http://localhost:8025" },
+  { label: "Webmin", href: "https://webmin.umbreon.lan" }
 ]
 </script>
 
