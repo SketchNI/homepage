@@ -44,7 +44,7 @@ let dev_links = [
             <div>
                 <p>Dev Links</p>
                 <div class="flex items-center space-x-4">
-                    <a v-for="(d, i) in dev_links" :key="i" :href="d.url" v-text="d.label"
+                    <a v-for="(d, i) in dev_links" :key="i" :href="d.href" v-text="d.label"
                        class="cursor-pointer" />
                 </div>
             </div>
