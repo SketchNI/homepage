@@ -1,13 +1,13 @@
 import youtube from './assets/youtube.svg'
 import bbc from './assets/bbc.svg'
 import plex from './assets/plex.svg'
-import koel from './assets/koel.svg'
+import transmission from './assets/transmission.png'
 import outlook from './assets/outlook.svg'
 import gmail from './assets/gmail.svg'
 import facebook from './assets/facebook.svg'
 import twitter from './assets/twitter.png'
 import github from './assets/github.svg'
-import mastodon from './assets/mastodon.svg'
+import amazon from './assets/amazon.svg'
 import instagram from './assets/instagram.svg'
 import wikipedia from './assets/wikipedia.svg'
 
@@ -28,9 +28,9 @@ export let links: Array<object> = [
     icon: plex,
   },
   {
-    name: "Koel",
-    url: "https://koel.umbreon.lan",
-    icon: koel,
+    name: "Transmission",
+    url: "https://bt.umbreon.lan",
+    icon: transmission,
   },
   {
     name: "Outlook",
@@ -58,14 +58,14 @@ export let links: Array<object> = [
     icon: github,
   },
   {
-    name: "Mastodon",
-    url: "https://nitech.online",
-    icon: mastodon,
-  },
-  {
     name: "Instagram",
     url: "https://instagram.com",
     icon: instagram,
+  },
+  {
+    name: "Amazon",
+    url: "https://amazon.co.uk",
+    icon: amazon,
   },
   {
     name: "Wikipedia",
