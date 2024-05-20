@@ -1,11 +1,5 @@
 <script setup>
-import { links } from "./DefaultLinks.ts";
-import { Storage } from "./utilities/storage.ts";
-
-let faves = links;
-if (Storage.has("favourites")) {
-  faves = JSON.parse(Storage.get("favourites"));
-}
+import { links, mails } from "./DefaultLinks.ts";
 
 let dev_links = [
   { label: "Meilisearch", href: "http://localhost:7700" },
@@ -16,13 +10,13 @@ let dev_links = [
 
 <template>
     <div class="icons max-w-4xl mx-auto">
-        <a class="select-none" :title="item.name" v-for="item in faves" :href="item.url">
+        <a class="select-none" :title="item.name" v-for="(item, i) in links" :key="i" :href="item.url">
             <img :src="`${item.icon}`" :alt="item.name" />
             <p>{{ item.name }}</p>
         </a>
     </div>
 
-    <div class="mt-12 max-w-4xl mx-auto">
+    <div class="my-12 max-w-4xl mx-auto">
         <div class="mx-auto px-4 md:px-0">
             <form method="GET" action="https://www.google.com/search">
                 <label for="search" class="sr-only">Search Query</label>
@@ -39,20 +33,25 @@ let dev_links = [
         </div>
     </div>
 
+    <div class="mail-icons max-w-4xl mx-auto">
+        <a class="select-none" :title="mail.name" v-for="(mail, i) in mails" :key="i" :href="mail.url" target="_blank">
+            <img :src="`${mail.icon}`" :alt="mail.name" />
+            <p>{{ mail.name }}</p>
+        </a>
+    </div>
+
     <div class="footer-wrapper">
         <footer>
             <div>
                 <p>Dev Links</p>
                 <div class="flex items-center space-x-4">
-                    <a v-for="(d, i) in dev_links" :key="i" :href="d.href" v-text="d.label"
+                    <a v-for="(d, i) in dev_links" :key="i" :href="d.href" v-text="d.label" target="_blank"
                        class="cursor-pointer" />
                 </div>
             </div>
 
             <div class="space-x-4">
                 <span>&copy; Denver Freeburn {{ new Date().getFullYear() }}</span>
-                <span>-</span>
-                <span>Powered by <a href="https://vuejs.org">VueJS</a></span>
                 <span>-</span>
                 <span>Source code available at <a target="_blank" class="font-mono"
                                                   href="https://github.com/SketchNI/homepage">github.com</a></span>
@@ -72,6 +71,26 @@ footer {
 
 .icons {
     @apply grid grid-cols-6 max-w-4xl pt-4 px-4 md:px-0;
+}
+
+.mail-icons {
+    @apply grid grid-cols-4 max-w-4xl pt-4 px-4 md:px-0;
+}
+
+.mail-icons > a {
+    @apply flex flex-col items-center justify-items-center justify-center p-4;
+    @apply hover:bg-neutral-400/70;
+    @apply dark:hover:bg-neutral-800 hover:border-transparent;
+    @apply hover:shadow-md shadow-neutral-800 dark:shadow-black;
+    @apply transition duration-150 ease-in;
+}
+
+.mail-icons > a > img {
+    @apply h-6 md:h-16 mx-auto;
+}
+
+.mail-icons > a > p {
+    @apply text-xs md:text-base text-neutral-600 dark:text-neutral-400 font-normal mt-2 text-center;
 }
 
 .icons > a {
