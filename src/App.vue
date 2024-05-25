@@ -2,9 +2,13 @@
 import { links, mails } from "./DefaultLinks.ts";
 
 let dev_links = [
-  { label: "Meilisearch", href: "http://localhost:7700" },
+  { label: "TypeSense", href: "http://localhost:8108" },
   { label: "Mailpit", href: "http://localhost:8025" },
-  { label: "Webmin", href: "https://webmin.umbreon.lan" }
+  { label: "Webmin", href: "https://webmin.umbreon.lan" },
+  { label: "Portainer", href: "https://port.umbreon.lan" },
+  { label: "Billing", href: "https://billing.sketchni.uk" },
+  { label: "Tau", href: "https://tau.umbreon.lan" },
+
 ]
 </script>
 
@@ -17,7 +21,7 @@ let dev_links = [
     </div>
 
     <div class="my-12 max-w-4xl mx-auto">
-        <div class="mx-auto px-4 md:px-0">
+        <div class="mx-auto md:px-0">
             <form method="GET" action="https://www.google.com/search">
                 <label for="search" class="sr-only">Search Query</label>
                 <div class="mt-2 flex rounded-md shadow-md shadow-neutral-400 dark:shadow-black">
@@ -62,19 +66,19 @@ let dev_links = [
 
 <style scoped>
 .footer-wrapper {
-    @apply absolute left-4 right-4 bottom-0 top-auto;
+    @apply lg:absolute left-4 right-4 bottom-0 top-auto;
 }
 
 footer {
-    @apply flex justify-between p-4 text-neutral-600 dark:text-neutral-400;
+    @apply flex flex-col space-y-6 lg:space-y-0 lg:flex-row justify-between p-4 text-neutral-600 dark:text-neutral-400;
 }
 
 .icons {
-    @apply grid grid-cols-6 max-w-4xl pt-4 px-4 md:px-0;
+    @apply grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 max-w-4xl pt-4;
 }
 
 .mail-icons {
-    @apply grid grid-cols-4 max-w-4xl pt-4 px-4 md:px-0;
+    @apply grid grid-cols-4 max-w-4xl pt-4;
 }
 
 .mail-icons > a {
@@ -86,11 +90,11 @@ footer {
 }
 
 .mail-icons > a > img {
-    @apply h-6 md:h-16 mx-auto;
+    @apply h-12 mx-auto;
 }
 
 .mail-icons > a > p {
-    @apply text-xs md:text-base text-neutral-600 dark:text-neutral-400 font-normal mt-2 text-center;
+    @apply text-base text-neutral-600 dark:text-neutral-400 font-normal mt-2 text-center;
 }
 
 .icons > a {
@@ -102,19 +106,19 @@ footer {
 }
 
 .icons > a > img {
-    @apply h-6 md:h-12 mx-auto;
+    @apply h-12 mx-auto;
 }
 
 .icons > a > p {
-    @apply text-xs md:text-base text-neutral-600 dark:text-neutral-400 font-normal mt-1.5 text-center;
+    @apply text-base text-neutral-600 dark:text-neutral-400 font-normal mt-1.5 text-center;
 }
 
 .searchbox {
-    @apply block w-full border-0 py-2.5 px-4 ring-1 ring-inset focus:ring-2 focus:ring-inset sm:text-sm;
+    @apply block w-full border-0 py-2.5 px-4 ring-1 ring-inset focus:ring-2 focus:ring-inset;
     @apply text-neutral-800 dark:text-neutral-200 bg-neutral-300 dark:bg-neutral-700;
     @apply ring-neutral-400 dark:ring-neutral-600 placeholder:text-neutral-600 dark:placeholder:text-neutral-400;
     @apply focus:ring-blue-600;
-    @apply sm:leading-6 md:text-lg outline-0 outline-none;
+    @apply sm:leading-6 text-lg outline-0 outline-none;
     @apply transition duration-150 ease-in;
 }
 

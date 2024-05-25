@@ -1,7 +1,7 @@
 import youtube from './assets/youtube.svg'
 import bbc from './assets/bbc.svg'
 import plex from './assets/plex.svg'
-import transmission from './assets/transmission.png'
+import google from './assets/google.svg'
 import facebook from './assets/facebook.svg'
 import twitter from './assets/twitter.png'
 import github from './assets/github.svg'
@@ -33,9 +33,9 @@ export let links: Array<object> = [
     icon: plex,
   },
   {
-    name: "Transmission",
-    url: "https://bt.umbreon.lan",
-    icon: transmission,
+    name: "Google",
+    url: "https://google.co.uk",
+    icon: google,
   },
   {
     name: "Facebook",
@@ -97,7 +97,7 @@ export let mails: Array<object> = [
   },
   {
     name: "Sketch",
-    url: "https://cloud724.thundercloud.uk:2096/",
+    url: "https://cloud517.thundercloud.uk:2096/",
     icon: cpanel,
   }
 ]
