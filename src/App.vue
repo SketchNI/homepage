@@ -8,7 +8,7 @@ let dev_links = [
   { label: "Portainer", href: "https://port.umbreon.lan" },
   { label: "Billing", href: "https://billing.sketchni.uk" },
   { label: "Tau", href: "https://tau.umbreon.lan" },
-]
+];
 </script>
 
 <template>
@@ -26,7 +26,7 @@ let dev_links = [
                 <div class="mt-2 flex rounded-md shadow-md shadow-neutral-400 dark:shadow-black">
                     <div class="relative flex flex-grow items-stretch focus-within:z-10">
                         <input type="text" id="search" class="searchbox" placeholder="Search DuckDuckGo for..."
-                               name="q" v-shortkey.once.focus="['/']" />
+                               name="q" autofocus v-shortkey.once.focus="['/']" />
                     </div>
 
                     <button class="search-btn" type="submit">Search</button>
@@ -122,7 +122,7 @@ footer {
 }
 
 .search-btn {
-    @apply bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl px-2 w-24 text-lg py-1;
+    @apply bg-gradient-to-br from-yellow-600 to-red-500 hover:from-yellow-600 hover:to-rose-600 px-2 w-24 text-lg py-1;
     @apply hover:bg-blue-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2;
     @apply focus-visible:outline-blue-500 font-medium text-white shadow-sm;
     @apply transition duration-150 ease-in;
@@ -130,6 +130,10 @@ footer {
 }
 
 .search-help-text {
-    @apply text-xs pt-2 font-medium text-neutral-700 dark:text-neutral-300;
+    @apply text-xs pt-2 font-medium text-neutral-700 dark:text-neutral-400;
+}
+
+kbd {
+    @apply border border-gray-600 rounded-md px-1 py-0.5 font-mono text-white bg-gray-800;
 }
 </style>
