@@ -8,7 +8,6 @@ let dev_links = [
   { label: "Portainer", href: "https://port.umbreon.lan" },
   { label: "Billing", href: "https://billing.sketchni.uk" },
   { label: "Tau", href: "https://tau.umbreon.lan" },
-
 ]
 </script>
 
@@ -22,11 +21,11 @@ let dev_links = [
 
     <div class="my-12 max-w-4xl mx-auto">
         <div class="mx-auto md:px-0">
-            <form method="GET" action="https://www.google.com/search">
+            <form method="GET" action="https://duckduckgo.com/?t=ffab&ia=web">
                 <label for="search" class="sr-only">Search Query</label>
                 <div class="mt-2 flex rounded-md shadow-md shadow-neutral-400 dark:shadow-black">
                     <div class="relative flex flex-grow items-stretch focus-within:z-10">
-                        <input type="text" id="search" class="searchbox" placeholder="Search Google for..."
+                        <input type="text" id="search" class="searchbox" placeholder="Search DuckDuckGo for..."
                                name="q" v-shortkey.once.focus="['/']" />
                     </div>
 
