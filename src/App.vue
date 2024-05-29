@@ -26,7 +26,7 @@ let dev_links = [
                 <div class="mt-2 flex rounded-md shadow-md shadow-neutral-400 dark:shadow-black">
                     <div class="relative flex flex-grow items-stretch focus-within:z-10">
                         <input type="text" id="search" class="searchbox" placeholder="Search DuckDuckGo for..."
-                               name="q" autofocus v-shortkey.once.focus="['/']" />
+                               name="q" v-shortkey.once.focus="['/']" />
                     </div>
 
                     <button class="search-btn" type="submit">Search</button>
