@@ -3,12 +3,21 @@
 @tailwind utilities;
 
 a {
-  @apply font-medium text-blue-600 dark:text-sky-400 border-b border-transparent;
-  @apply hover:text-blue-800 dark:hover:text-blue-500 hover:border-blue-800 dark:hover:border-blue-500;
-  @apply transition duration-150 ease-in;
+    @apply font-medium text-blue-500 border-b border-transparent;
+    @apply hover:text-blue-400 hover:border-blue-400 visited:text-purple-400;
+    @apply transition duration-150 ease-in;
 }
 
 body {
-  @apply h-screen w-full bg-neutral-200 dark:bg-neutral-900 subpixel-antialiased;
+    @apply h-screen bg-neutral-950 subpixel-antialiased;
 }
 
+#background {
+    @apply fixed inset-0 w-full h-full -z-50;
+    background-image: url("/src/assets/background.svg");
+    /*background-size: cover;*/
+}
+
+#app {
+    @apply z-10;
+}

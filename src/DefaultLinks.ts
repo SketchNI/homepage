@@ -1,20 +1,19 @@
-import youtube from './assets/youtube.svg'
-import bbc from './assets/bbc.svg'
-import plex from './assets/plex.svg'
-import google from './assets/google.svg'
-import facebook from './assets/facebook.svg'
-import twitter from './assets/twitter.png'
-import github from './assets/github.svg'
-import amazon from './assets/amazon.svg'
-import instagram from './assets/instagram.svg'
-import wikipedia from './assets/wikipedia.svg'
-import steam from './assets/steam.svg'
-import kindle from './assets/kindle.svg'
+import youtube from "./assets/youtube.svg";
+import bbc from "./assets/bbc.svg";
+import plex from "./assets/plex.svg";
+import google from "./assets/google.svg";
+import facebook from "./assets/facebook.svg";
+import twitter from "./assets/twitter.png";
+import github from "./assets/github.svg";
+import amazon from "./assets/amazon.svg";
+import instagram from "./assets/instagram.svg";
+import wikipedia from "./assets/wikipedia.svg";
+import steam from "./assets/steam.svg";
+import sciencenews from "./assets/sciencenews.webp";
 
-import outlook from './assets/outlook.svg'
-import gmail from './assets/gmail.svg'
-import cpanel from './assets/cpanel.svg'
-import rainloop from './assets/rainloop.png'
+import outlook from "./assets/outlook.svg";
+import gmail from "./assets/gmail.svg";
+import rainloop from "./assets/rainloop.png";
 
 export let links: Array<object> = [
   {
@@ -73,9 +72,9 @@ export let links: Array<object> = [
     icon: steam,
   },
   {
-    name: "Kindle",
-    url: "https://www.amazon.co.uk/kindle-dbs/hz/bookshelf",
-    icon: kindle,
+    name: "Science News",
+    url: "https://www.sciencenews.org/",
+    icon: sciencenews,
   },
 ];
 
@@ -95,9 +94,4 @@ export let mails: Array<object> = [
     url: "https://freeburn.uk",
     icon: rainloop,
   },
-  {
-    name: "Sketch",
-    url: "https://cloud517.thundercloud.uk:2096/",
-    icon: cpanel,
-  }
-]
+];
