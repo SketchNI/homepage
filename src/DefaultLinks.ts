@@ -14,6 +14,7 @@ import sciencenews from "./assets/sciencenews.webp";
 import outlook from "./assets/outlook.svg";
 import gmail from "./assets/gmail.svg";
 import rainloop from "./assets/rainloop.png";
+import owncloud from "./assets/owncloud.svg";
 
 export let links: Array<object> = [
   {
@@ -94,4 +95,9 @@ export let mails: Array<object> = [
     url: "https://freeburn.uk",
     icon: rainloop,
   },
+  {
+    name: "OwnCloud",
+    url: "https://cloud.umbreon.lan",
+    icon: owncloud,
+  }
 ];
