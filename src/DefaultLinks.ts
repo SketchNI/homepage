@@ -29,7 +29,7 @@ export let links: Array<object> = [
   },
   {
     name: "Plex",
-    url: "https://plex.umbreon.lan",
+    url: "https://plex.jinjo.lan",
     icon: plex,
   },
   {
