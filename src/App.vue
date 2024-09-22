@@ -2,10 +2,9 @@
 import { links, mails } from "./DefaultLinks.ts";
 
 let dev_links = [
-    { label: "TypeSense", href: "http://localhost:8108" },
-    { label: "Mailpit", href: "http://localhost:8025" },
-    { label: "Webmin", href: "https://webmin.umbreon.lan" },
-    { label: "Portainer", href: "https://port.umbreon.lan" },
+    { label: "Mailpit", href: "https://mailpit.jinjo.lan:8025" },
+    { label: "Webmin", href: "https://webmin.jinjo.lan" },
+    { label: "Portainer", href: "https://port.jinjo.lan" },
     { label: "Billing", href: "https://billing.sketchni.uk" },
 ];
 </script>
