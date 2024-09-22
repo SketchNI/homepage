@@ -2,7 +2,7 @@
 import { links, mails } from "./DefaultLinks.ts";
 
 let dev_links = [
-    { label: "Mailpit", href: "https://mailpit.jinjo.lan:8025" },
+    { label: "Mailpit", href: "https://mailpit.jinjo.lan" },
     { label: "Webmin", href: "https://webmin.jinjo.lan" },
     { label: "Portainer", href: "https://port.jinjo.lan" },
     { label: "Billing", href: "https://billing.sketchni.uk" },
