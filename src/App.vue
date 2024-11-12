@@ -5,6 +5,8 @@ let dev_links = [
     { label: "Mailpit", href: "https://mailpit.jinjo.lan" },
     { label: "Webmin", href: "https://webmin.jinjo.lan" },
     { label: "Portainer", href: "https://port.jinjo.lan" },
+    { label: "Grafana", href: "https://grafana.jinjo.lan" },
+    { label: "Sentry", href: "https://sentry.jinjo.lan" },
     { label: "Billing", href: "https://billing.sketchni.uk" },
 ];
 </script>
