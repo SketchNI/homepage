@@ -3,7 +3,7 @@ import bbc from "./assets/bbc.svg";
 import plex from "./assets/plex.svg";
 import google from "./assets/google.svg";
 import facebook from "./assets/facebook.svg";
-import twitter from "./assets/twitter.png";
+import bluesky from "./assets/bluesky.svg";
 import github from "./assets/github.svg";
 import amazon from "./assets/amazon.svg";
 import instagram from "./assets/instagram.svg";
@@ -14,7 +14,7 @@ import sciencenews from "./assets/sciencenews.webp";
 import outlook from "./assets/outlook.svg";
 import gmail from "./assets/gmail.svg";
 import rainloop from "./assets/rainloop.png";
-import owncloud from "./assets/owncloud.svg";
+import vscode from "./assets/vscode.svg";
 
 export let links: Array<object> = [
   {
@@ -43,9 +43,9 @@ export let links: Array<object> = [
     icon: facebook,
   },
   {
-    name: "Twitter",
-    url: "https://twitter.com",
-    icon: twitter,
+    name: "BlueSky",
+    url: "https://bsky.app",
+    icon: bluesky,
   },
   {
     name: "GitHub",
@@ -96,8 +96,8 @@ export let mails: Array<object> = [
     icon: rainloop,
   },
   {
-    name: "OwnCloud",
-    url: "https://cloud.umbreon.lan",
-    icon: owncloud,
+    name: "Code",
+    url: "https://code.jinjo.lan",
+    icon: vscode,
   }
 ];

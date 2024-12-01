@@ -12,7 +12,7 @@ let dev_links = [
 </script>
 
 <template>
-    <div class="icons max-w-4xl mx-auto">
+    <div class="mx-auto max-w-4xl icons">
         <a
             class="select-none"
             :title="item.name"
@@ -25,12 +25,12 @@ let dev_links = [
         </a>
     </div>
 
-    <div class="my-12 max-w-4xl mx-auto">
+    <div class="mx-auto my-12 max-w-4xl">
         <div class="mx-auto sm:px-0 md:px-6">
             <form method="GET" action="https://google.com/search?t=ffab&ia=web">
                 <label for="search" class="sr-only">Search Query</label>
-                <div class="mt-2 flex rounded-full shadow-md shadow-black">
-                    <div class="relative flex flex-grow items-stretch items-center focus-within:z-10">
+                <div class="flex mt-2 rounded-full shadow-md shadow-black">
+                    <div class="flex relative flex-grow items-stretch focus-within:z-10">
                         <input
                             type="text"
                             id="search"
@@ -51,7 +51,7 @@ let dev_links = [
         </div>
     </div>
 
-    <div class="mail-icons max-w-4xl mx-auto">
+    <div class="mx-auto max-w-4xl mail-icons">
         <a
             class="select-none"
             :title="mail.name"
@@ -67,7 +67,7 @@ let dev_links = [
 
     <div class="footer-wrapper">
         <footer>
-            <div class="text-sm mt-6 lg:mt-0">
+            <div class="mt-6 text-sm lg:mt-0">
                 <p>Dev Links</p>
                 <div class="flex items-center space-x-4">
                     <a
@@ -90,7 +90,7 @@ let dev_links = [
     </div>
 </template>
 
-<style scoped>
+<style scoped lang="postcss">
 .footer-wrapper {
     @apply lg:absolute left-4 right-4 bottom-0 top-auto;
 }
