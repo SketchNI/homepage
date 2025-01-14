@@ -5,7 +5,7 @@ let dev_links = [
     { label: "Mailpit", href: "https://mailpit.jinjo.lan" },
     { label: "Webmin", href: "https://webmin.jinjo.lan" },
     { label: "Portainer", href: "https://port.jinjo.lan" },
-    { label: "Grafana", href: "https://grafana.jinjo.lan" },
+    { label: "Dashboard", href: "https://dash.jinjo.lan" },
     { label: "Sentry", href: "https://sentry.jinjo.lan" },
     { label: "Billing", href: "https://billing.sketchni.uk" },
 ];
@@ -104,13 +104,12 @@ footer {
 }
 
 .mail-icons {
-    @apply grid grid-cols-4 max-w-4xl pt-4;
+    @apply grid grid-cols-3 max-w-4xl pt-4;
 }
 
 .mail-icons > a {
     @apply flex flex-col items-center justify-items-center justify-around p-4 rounded-xl;
-    @apply hover:bg-gray-700/60 hover:border-transparent;
-    @apply hover:shadow-md shadow-black;
+    @apply bg-gradient-to-br hover:from-blue-700/60 hover:to-red-700/60 border-none;
     @apply transition duration-150 ease-in;
 }
 
@@ -124,8 +123,7 @@ footer {
 
 .icons > a {
     @apply flex flex-col items-center justify-items-center justify-center p-4 rounded-xl;
-    @apply hover:bg-gray-700/60 hover:border-transparent;
-    @apply hover:shadow-md shadow-black;
+    @apply bg-gradient-to-br hover:from-blue-700/60 hover:to-red-700/60 border-none;
     @apply transition duration-150 ease-in;
 }
 
@@ -147,9 +145,9 @@ footer {
 }
 
 .search-btn {
-    @apply font-medium text-white bg-orange-600/90 md:rounded-r-full px-2 w-24 text-lg;
-    @apply hover:bg-orange-700 focus:bg-orange-800;
-    @apply focus-visible:outline-none;
+    @apply font-medium text-white from-blue-500 to-red-500 md:rounded-r-full px-2 w-24 text-lg;
+    @apply bg-gradient-to-br hover:from-blue-700 hover:to-red-700;
+    @apply focus-visible:outline-none border-none;
     @apply transition duration-150 ease-in;
     text-shadow: 2px 2px 6px #000000;
 }
@@ -160,9 +158,5 @@ footer {
 
 kbd {
     @apply border border-gray-600 rounded-md px-1 py-0.5 font-mono text-white bg-gray-800;
-}
-
-.OwnCloud {
-    @apply fill-blue-700;
 }
 </style>

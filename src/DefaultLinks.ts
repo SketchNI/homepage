@@ -14,7 +14,6 @@ import sciencenews from "./assets/sciencenews.webp";
 import outlook from "./assets/outlook.svg";
 import gmail from "./assets/gmail.svg";
 import rainloop from "./assets/rainloop.png";
-import vscode from "./assets/vscode.svg";
 
 export let links: Array<object> = [
   {
@@ -94,10 +93,5 @@ export let mails: Array<object> = [
     name: "Freeburn",
     url: "https://freeburn.uk",
     icon: rainloop,
-  },
-  {
-    name: "Code",
-    url: "https://code.jinjo.lan",
-    icon: vscode,
   }
 ];
