@@ -8,6 +8,7 @@ let dev_links = [
     { label: "Dashboard", href: "https://dash.jinjo.lan" },
     { label: "Sentry", href: "https://sentry.jinjo.lan" },
     { label: "Billing", href: "https://billing.sketchni.uk" },
+    { label: "Monopoly", href: "https://monopoly.jinjo.lan" },
 ];
 </script>
 
