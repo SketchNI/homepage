@@ -1,25 +1,14 @@
 <script setup>
-import { links, mails } from "./DefaultLinks.ts";
-
-let dev_links = [
-    { label: "Mailpit", href: "https://mailpit.jinjo.lan" },
-    { label: "Webmin", href: "https://webmin.jinjo.lan" },
-    { label: "Portainer", href: "https://port.jinjo.lan" },
-    { label: "Dashboard", href: "https://dash.jinjo.lan" },
-    { label: "Sentry", href: "https://sentry.jinjo.lan" },
-    { label: "Billing", href: "https://billing.sketchni.uk" },
-    { label: "Monopoly", href: "http://monopoly.jinjo.lan" },
-];
+import { links, mails, dev_links } from "./DefaultLinks.ts";
 </script>
 
 <template>
     <div class="mx-auto max-w-4xl icons">
-        <a
-            class="select-none"
-            :title="item.name"
-            v-for="(item, i) in links"
-            :key="i"
-            :href="item.url"
+        <a class="select-none"
+           :title="item.name"
+           v-for="(item, i) in links"
+           :key="i"
+           :href="item.url"
         >
             <img :src="`${item.icon}`" :alt="item.name" />
             <p>{{ item.name }}</p>
@@ -32,18 +21,17 @@ let dev_links = [
                 <label for="search" class="sr-only">Search Query</label>
                 <div class="flex mt-2 rounded-full shadow-md shadow-black">
                     <div class="flex relative flex-grow items-stretch focus-within:z-10">
-                        <input
-                            type="text"
-                            id="search"
-                            class="searchbox"
-                            placeholder="Search DuckDuckGo for..."
-                            name="q"
-                            autofocus
-                            v-shortkey.once.focus="['/']"
+                        <input type="text"
+                               id="search"
+                               class="searchbox group"
+                               placeholder="Search DuckDuckGo for..."
+                               name="q"
+                               autofocus
+                               v-shortkey.once.focus="['/']"
                         />
                     </div>
 
-                    <button class="search-btn" type="submit">Search</button>
+                    <button class="search-btn group" type="submit">Search</button>
                 </div>
                 <p class="search-help-text">
                     Press <kbd>/</kbd> to start search.
@@ -53,14 +41,12 @@ let dev_links = [
     </div>
 
     <div class="mx-auto max-w-4xl mail-icons">
-        <a
-            class="select-none"
-            :title="mail.name"
-            v-for="(mail, i) in mails"
-            :key="i"
-            :href="mail.url"
-            target="_blank"
-        >
+        <a class="select-none"
+           :title="mail.name"
+           v-for="(mail, i) in mails"
+           :key="i"
+           :href="mail.url"
+           target="_blank">
             <img :src="`${mail.icon}`" :class="mail.name" :alt="mail.name" />
             <p>{{ mail.name }}</p>
         </a>
@@ -71,21 +57,18 @@ let dev_links = [
             <div class="mt-6 text-sm lg:mt-0">
                 <p>Dev Links</p>
                 <div class="flex items-center space-x-4">
-                    <a
-                        v-for="(d, i) in dev_links"
-                        :key="i"
-                        :href="d.href"
-                        v-text="d.label"
-                        target="_blank"
-                        class="cursor-pointer"
+                    <a v-for="(d, i) in dev_links"
+                       :key="i"
+                       :href="d.href"
+                       v-text="d.label"
+                       target="_blank"
+                       class="cursor-pointer"
                     />
                 </div>
             </div>
 
             <div class="space-x-4">
-                <span
-                    >&copy; Denver Freeburn {{ new Date().getFullYear() }}</span
-                >
+                <span>&copy; Denver Freeburn {{ new Date().getFullYear() }}</span>
             </div>
         </footer>
     </div>
@@ -105,13 +88,13 @@ footer {
 }
 
 .mail-icons {
-    @apply grid grid-cols-3 max-w-4xl pt-4;
+    @apply grid grid-cols-4 max-w-4xl pt-4;
 }
 
 .mail-icons > a {
-    @apply flex flex-col items-center justify-items-center justify-around p-4 rounded-xl;
-    @apply bg-gradient-to-br hover:from-blue-700/60 hover:to-red-700/60 border-none;
-    @apply transition duration-150 ease-in;
+    @apply flex flex-col items-center justify-items-center justify-around p-4 rounded-sm
+    bg-gradient-to-br hover:from-blue-700/60 hover:to-red-700/60 border-none
+    transition duration-150 ease-in;
 }
 
 .mail-icons > a > img {
@@ -123,9 +106,9 @@ footer {
 }
 
 .icons > a {
-    @apply flex flex-col items-center justify-items-center justify-center p-4 rounded-xl;
-    @apply bg-gradient-to-br hover:from-blue-700/60 hover:to-red-700/60 border-none;
-    @apply transition duration-150 ease-in;
+    @apply flex flex-col items-center justify-items-center justify-center p-4 rounded-sm
+    bg-gradient-to-br hover:from-blue-700/60 hover:to-red-700/60 border-none
+    transition duration-150 ease-in;
 }
 
 .icons > a > img {
@@ -137,20 +120,16 @@ footer {
 }
 
 .searchbox {
-    @apply block w-full border-2 border-r-0 border-gray-600 py-2.5 px-4 md:rounded-l-full;
-    @apply text-gray-200 bg-gray-800;
-    @apply ring-gray-600 placeholder:text-neutral-400;
-    @apply focus:outline-none focus:border-blue-500;
-    @apply sm:leading-6 text-lg outline-0 outline-none;
-    @apply transition duration-150 ease-in;
+    @apply block w-full border-2 border-r-0 border-gray-600 py-2.5 px-4 md:rounded-l-sm
+    text-gray-200 bg-gray-800 ring-gray-600 placeholder:text-neutral-400
+    focus:outline-none focus:border-blue-500/70  sm:leading-6 text-lg outline-0 outline-none
+    transition duration-150 ease-in;
 }
 
 .search-btn {
-    @apply font-medium text-white from-blue-500 to-red-500 md:rounded-r-full px-2 w-24 text-lg;
-    @apply bg-gradient-to-br hover:from-blue-700 hover:to-red-700;
-    @apply focus-visible:outline-none border-none;
-    @apply transition duration-150 ease-in;
-    text-shadow: 2px 2px 6px #000000;
+    @apply font-medium text-white bg-blue-500/70 md:rounded-r-sm px-2 w-24 text-lg
+    hover:bg-red-500/70 focus-visible:outline-none border-none
+    transition duration-150 ease-in;
 }
 
 .search-help-text {
@@ -158,6 +137,6 @@ footer {
 }
 
 kbd {
-    @apply border border-gray-600 rounded-md px-1 py-0.5 font-mono text-white bg-gray-800;
+    @apply border border-gray-600 rounded-sm px-1 py-0.5 font-mono text-white bg-gray-800;
 }
 </style>
