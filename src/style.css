@@ -14,10 +14,10 @@ body {
 
 #background {
     @apply fixed inset-0 w-full h-full -z-50;
-    background-image: url("/src/assets/background.svg");
-    /*background-size: cover;*/
+    background-image: url("/src/assets/background2.jpg");
+    background-size: cover;
 }
 
 #app {
-    @apply z-10;
+    @apply z-10 bg-neutral-950/80 h-full;
 }

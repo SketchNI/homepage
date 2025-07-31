@@ -10,6 +10,7 @@ import steam from "./assets/steam.svg";
 import sciencenews from "./assets/sciencenews.webp";
 import skynews from "./assets/skynews.png";
 import laracasts from "./assets/laracasts.png";
+import npm from "./assets/npm.svg";
 
 import outlook from "./assets/outlook.svg";
 import gmail from "./assets/gmail.svg";
@@ -99,15 +100,20 @@ export let mails: Array<object> = [
     name: "Packagist",
     url: "https://packagist.org",
     icon: packagist,
+  },
+  {
+    name: "NPM",
+    url: "https://npmjs.com",
+    icon: npm,
   }
 ];
 
 export let dev_links = [
-  { label: "Mailpit", href: "https://mailpit.jinjo.lan" },
   { label: "Webmin", href: "https://webmin.jinjo.lan" },
   { label: "Portainer", href: "https://port.jinjo.lan" },
-  { label: "Dashboard", href: "https://dash.jinjo.lan" },
   { label: "Forgejo", href: "https://git.sketchni.uk" },
   { label: "Billing", href: "https://billing.sketchni.uk" },
-  { label: "Monopoly", href: "http://monopoly.jinjo.lan" },
+  { label: "Traq", href: "https://traq.sketchni.uk" },
+  { label: "Authentik", href: "https://sso.sketchni.uk" },
+  { label: "Pelican", href: "https://peli.sketchni.uk" },
 ];

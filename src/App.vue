@@ -88,7 +88,7 @@ footer {
 }
 
 .mail-icons {
-    @apply grid grid-cols-4 max-w-4xl pt-4;
+    @apply grid grid-cols-5 max-w-4xl pt-4;
 }
 
 .mail-icons > a {
