@@ -17,7 +17,7 @@ import { links, mails, dev_links } from "./DefaultLinks.ts";
 
     <div class="mx-auto my-12 max-w-4xl">
         <div class="mx-auto sm:px-0 md:px-6">
-            <form method="GET" action="https://google.com/search?t=ffab&ia=web">
+            <form method="GET" action="https://duckduckgo.com/?t=h_&ia=web">
                 <label for="search" class="sr-only">Search Query</label>
                 <div class="flex mt-2 rounded-full shadow-md shadow-black">
                     <div class="flex relative flex-grow items-stretch focus-within:z-10">
