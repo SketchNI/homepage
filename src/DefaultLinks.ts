@@ -2,18 +2,20 @@ import youtube from "./assets/youtube.svg";
 import bbc from "./assets/bbc.svg";
 import plex from "./assets/plex.svg";
 import google from "./assets/google.svg";
-import facebook from "./assets/facebook.svg";
 import bluesky from "./assets/bluesky.svg";
 import github from "./assets/github.svg";
 import amazon from "./assets/amazon.svg";
-import instagram from "./assets/instagram.svg";
 import wikipedia from "./assets/wikipedia.svg";
 import steam from "./assets/steam.svg";
 import sciencenews from "./assets/sciencenews.webp";
+import skynews from "./assets/skynews.png";
+import laracasts from "./assets/laracasts.png";
+import npm from "./assets/npm.svg";
 
 import outlook from "./assets/outlook.svg";
 import gmail from "./assets/gmail.svg";
 import rainloop from "./assets/rainloop.png";
+import packagist from "./assets/packagist.png";
 
 export let links: Array<object> = [
   {
@@ -37,11 +39,6 @@ export let links: Array<object> = [
     icon: google,
   },
   {
-    name: "Facebook",
-    url: "https://facebook.com",
-    icon: facebook,
-  },
-  {
     name: "BlueSky",
     url: "https://bsky.app",
     icon: bluesky,
@@ -52,9 +49,9 @@ export let links: Array<object> = [
     icon: github,
   },
   {
-    name: "Instagram",
-    url: "https://instagram.com",
-    icon: instagram,
+    name: "Sky News",
+    url: "https://news.sky.com",
+    icon: skynews,
   },
   {
     name: "Amazon",
@@ -70,6 +67,11 @@ export let links: Array<object> = [
     name: "Steam",
     url: "https://store.steampowered.com",
     icon: steam,
+  },
+  {
+    name: "Laracasts",
+    url: "https://laracasts.com",
+    icon: laracasts,
   },
   {
     name: "Science News",
@@ -93,5 +95,25 @@ export let mails: Array<object> = [
     name: "Freeburn",
     url: "https://freeburn.uk",
     icon: rainloop,
+  },
+  {
+    name: "Packagist",
+    url: "https://packagist.org",
+    icon: packagist,
+  },
+  {
+    name: "NPM",
+    url: "https://npmjs.com",
+    icon: npm,
   }
+];
+
+export let dev_links = [
+  { label: "Webmin", href: "https://webmin.jinjo.lan" },
+  { label: "Portainer", href: "https://port.jinjo.lan" },
+  { label: "Forgejo", href: "https://git.sketchni.uk" },
+  { label: "Billing", href: "https://billing.sketchni.uk" },
+  { label: "Traq", href: "https://traq.sketchni.uk" },
+  { label: "Authentik", href: "https://sso.sketchni.uk" },
+  { label: "Pelican", href: "https://peli.sketchni.uk" },
 ];
