@@ -117,4 +117,6 @@ export let dev_links = [
   { label: "Authentik", href: "https://sso.sketchni.uk" },
   { label: "Pelican", href: "https://peli.sketchni.uk" },
   { label: "S3", href: "https://s3w.sketchni.uk/" },
+  { label: "Immich", href: "https://img.sketchni.uk/" },
+  { label: "Mailpit", href: "https://mailpit.jinjo.lan/" },
 ];
