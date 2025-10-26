@@ -40,7 +40,7 @@ export let links: Array<object> = [
   },
   {
     name: "BlueSky",
-    url: "https://bsky.app",
+    url: "https://deer.social",
     icon: bluesky,
   },
   {
@@ -116,4 +116,6 @@ export let dev_links = [
   { label: "Traq", href: "https://traq.sketchni.uk" },
   { label: "Authentik", href: "https://sso.sketchni.uk" },
   { label: "Pelican", href: "https://peli.sketchni.uk" },
+  { label: "S3", href: "https://s3w.sketchni.uk/" },
+  { label: "Prometheus + Grafana", href: "https://grf.sketchni.uk/" },
 ];
