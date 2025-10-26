@@ -117,5 +117,4 @@ export let dev_links = [
   { label: "Authentik", href: "https://sso.sketchni.uk" },
   { label: "Pelican", href: "https://peli.sketchni.uk" },
   { label: "S3", href: "https://s3w.sketchni.uk/" },
-  { label: "Prometheus + Grafana", href: "https://grf.sketchni.uk/" },
 ];
