@@ -114,7 +114,6 @@ export let dev_links = [
   { label: "Forgejo", href: "https://git.sketchni.uk" },
   { label: "Billing", href: "https://billing.sketchni.uk" },
   { label: "Traq", href: "https://traq.sketchni.uk" },
-  { label: "Authentik", href: "https://sso.sketchni.uk" },
   { label: "Pelican", href: "https://peli.sketchni.uk" },
   { label: "S3", href: "https://s3w.sketchni.uk/" },
   { label: "Immich", href: "https://img.sketchni.uk/" },
