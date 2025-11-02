@@ -118,4 +118,5 @@ export let dev_links = [
   { label: "S3", href: "https://s3w.sketchni.uk/" },
   { label: "Immich", href: "https://img.sketchni.uk/" },
   { label: "Mailpit", href: "https://mailpit.jinjo.lan/" },
+  { label: "Transmission", href: "https://bt.jinjo.lan/" },
 ];
