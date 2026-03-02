@@ -10,6 +10,8 @@ import steam from "./assets/steam.svg";
 import sciencenews from "./assets/sciencenews.webp";
 import skynews from "./assets/skynews.png";
 import laracasts from "./assets/laracasts.png";
+import facebook from "./assets/facebook.png";
+import instagram from "./assets/instagram.png";
 import npm from "./assets/npm.svg";
 
 import outlook from "./assets/outlook.svg";
@@ -78,6 +80,16 @@ export let links: Array<object> = [
     url: "https://www.sciencenews.org/",
     icon: sciencenews,
   },
+  {
+    name: "Instagram",
+    url: "https://www.instagram.com/",
+    icon: instagram,
+  },
+  {
+    name: "Facebook",
+    url: "https://www.facebook.com/",
+    icon: facebook,
+  },
 ];
 
 export let mails: Array<object> = [
@@ -114,7 +126,7 @@ export let dev_links = [
   { label: "Forgejo", href: "https://git.sketchni.uk" },
   { label: "Billing", href: "https://billing.sketchni.uk" },
   { label: "Pelican", href: "https://peli.sketchni.uk" },
-  { label: "S3", href: "https://s3.sketchni.uk/" },
+  { label: "S3", href: "https://console.sketchni.uk/" },
   { label: "Immich", href: "https://img.sketchni.uk/" },
   { label: "Mailpit", href: "https://mailpit.jinjo.lan/" },
   { label: "Transmission", href: "https://bt.jinjo.lan/" },
