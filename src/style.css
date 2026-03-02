@@ -14,7 +14,7 @@ body {
 
 #background {
     @apply fixed inset-0 w-full h-full -z-50;
-    background-image: url("/src/assets/background2.jpg");
+    background-image: url("/src/assets/background2.jpeg");
     background-size: cover;
 }
 
