@@ -13,6 +13,7 @@ import laracasts from "./assets/laracasts.png";
 import facebook from "./assets/facebook.png";
 import instagram from "./assets/instagram.png";
 import npm from "./assets/npm.svg";
+import theverge from "./assets/theverge.svg";
 
 import outlook from "./assets/outlook.svg";
 import gmail from "./assets/gmail.svg";
@@ -89,6 +90,11 @@ export let links: Array<object> = [
     name: "Facebook",
     url: "https://www.facebook.com/",
     icon: facebook,
+  },
+  {
+    name: "The Verge",
+    url: "https://www.theverge.com/",
+    icon: theverge,
   },
 ];
 
