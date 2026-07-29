@@ -43,7 +43,7 @@ export let links: Array<object> = [
   },
   {
     name: "BlueSky",
-    url: "https://deer.social",
+    url: "https://bsky.app",
     icon: bluesky,
   },
   {
@@ -137,4 +137,5 @@ export let dev_links = [
   { label: "Mailpit", href: "https://mailpit.jinjo.lan/" },
   { label: "Transmission", href: "https://bt.jinjo.lan/" },
   { label: "Planka", href: "https://dev.sketchni.uk" },
+  { label: "Madhouse", href: "https://panel.madhouseminers.com" },
 ];
