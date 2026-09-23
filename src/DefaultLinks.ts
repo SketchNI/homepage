@@ -99,8 +99,9 @@ export let links: Array<object> = [
   },
   {
     name: "Wired",
-    url: "https://www.wired.com/";
-    icon: wired
+    url: "https://www.wired.com/",
+    icon: wired,
+  }
 ];
 
 export let mails: Array<object> = [
