@@ -61,7 +61,6 @@ import { links, mails, dev_links } from "./DefaultLinks.ts";
                        :key="i"
                        :href="d.href"
                        v-text="d.label"
-                       target="_blank"
                        class="cursor-pointer"
                     />
                 </div>
