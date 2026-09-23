@@ -19,7 +19,7 @@ import outlook from "./assets/outlook.svg";
 import gmail from "./assets/gmail.svg";
 import rainloop from "./assets/rainloop.png";
 import packagist from "./assets/packagist.png";
-import wired from "./assets/wired.svg";
+import wired from "./assets/wired-vector-logo.svg";
 
 export let links: Array<object> = [
   {
