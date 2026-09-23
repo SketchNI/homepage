@@ -19,6 +19,7 @@ import outlook from "./assets/outlook.svg";
 import gmail from "./assets/gmail.svg";
 import rainloop from "./assets/rainloop.png";
 import packagist from "./assets/packagist.png";
+import wired from "./assets/wired.svg";
 
 export let links: Array<object> = [
   {
@@ -96,6 +97,10 @@ export let links: Array<object> = [
     url: "https://www.theverge.com/",
     icon: theverge,
   },
+  {
+    name: "Wired",
+    url: "https://www.wired.com/";
+    icon: wired
 ];
 
 export let mails: Array<object> = [
@@ -136,6 +141,6 @@ export let dev_links = [
   { label: "Immich", href: "https://img.sketchni.uk/" },
   { label: "Mailpit", href: "https://mailpit.jinjo.lan/" },
   { label: "Transmission", href: "https://bt.jinjo.lan/" },
-  { label: "Planka", href: "https://dev.sketchni.uk" },
+  { label: "YouTrack", href: "https://yt.sketchni.uk" },
   { label: "Madhouse", href: "https://panel.madhouseminers.com" },
 ];
