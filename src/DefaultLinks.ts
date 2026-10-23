@@ -14,6 +14,7 @@ import facebook from "./assets/facebook.png";
 import instagram from "./assets/instagram.png";
 import npm from "./assets/npm.svg";
 import theverge from "./assets/theverge.svg";
+import threads from "./assets/threads.svg";
 
 import outlook from "./assets/outlook.svg";
 import gmail from "./assets/gmail.svg";
@@ -101,7 +102,11 @@ export let links: Array<object> = [
     name: "Wired",
     url: "https://www.wired.com/",
     icon: wired,
-  }
+  },
+  {
+    name: "Threads",
+    url: "https://threads.com",
+    icon: threads,
 ];
 
 export let mails: Array<object> = [
@@ -133,15 +138,9 @@ export let mails: Array<object> = [
 ];
 
 export let dev_links = [
-  { label: "Webmin", href: "https://webmin.jinjo.lan" },
   { label: "Portainer", href: "https://port.jinjo.lan" },
-  { label: "Forgejo", href: "https://git.sketchni.uk" },
   { label: "Billing", href: "https://billing.sketchni.uk" },
-  { label: "Pelican", href: "https://peli.sketchni.uk" },
-  { label: "S3", href: "https://console.sketchni.uk/" },
   { label: "Immich", href: "https://img.sketchni.uk/" },
   { label: "Mailpit", href: "https://mailpit.jinjo.lan/" },
-  { label: "Transmission", href: "https://bt.jinjo.lan/" },
-  { label: "YouTrack", href: "https://yt.sketchni.uk" },
   { label: "Madhouse", href: "https://panel.madhouseminers.com" },
 ];
