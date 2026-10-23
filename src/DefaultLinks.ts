@@ -107,6 +107,7 @@ export let links: Array<object> = [
     name: "Threads",
     url: "https://threads.com",
     icon: threads,
+  }
 ];
 
 export let mails: Array<object> = [
@@ -142,5 +143,5 @@ export let dev_links = [
   { label: "Billing", href: "https://billing.sketchni.uk" },
   { label: "Immich", href: "https://img.sketchni.uk/" },
   { label: "Mailpit", href: "https://mailpit.jinjo.lan/" },
-  { label: "Madhouse", href: "https://panel.madhouseminers.com" },
+  { label: "Madhouse", href: "https://panel.madhouseminers.com" }
 ];
